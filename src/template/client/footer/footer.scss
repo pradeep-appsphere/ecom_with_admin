@@ -1,0 +1,13 @@
+@import '../../../assets/scss/variable.scss';
+
+.Footer {
+    padding: 10px 30px;
+    background: #e1d3fe;
+    display: flex;
+    align-items: center;
+    
+    .logo {
+        height: 30px;
+        width: 90px;        
+    }
+}

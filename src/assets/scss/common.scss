@@ -1,0 +1,88 @@
+
+@import './variable.scss';
+
+* {
+    outline: none;    
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+}
+
+body, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+// Header 
+header {
+    padding: 15px 30px;
+}
+.Header {
+   
+    .logo {
+        height: 50px;
+        width: 150px;        
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+            li {
+                list-style: none;
+                display: inline;
+                margin: 0px 10px;
+                
+                &:first-child {
+                    margin-left: 0px;
+                }
+                &:last-child {
+                    margin-right: 0px;
+                }               
+                a {
+                    padding: 5px 3px 3px 3px;
+                    border-radius: 0px;                    
+                }
+            }
+        }
+    }
+
+    .category-menu {
+        padding: 12px 30px;
+        background: $primary;
+        
+        a {
+            font-weight: 300;
+            color: $primary-gray;
+        }
+    }
+}
+
+.is-active-menu {
+    color: $primary; 
+    border-bottom: 3px solid $primary;  
+}
+
+.d-flex {
+    display: flex;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+// Page
+.page {
+    min-height: calc(100vh - 212px); // header + category header + footer + page top/bottom padding
+    padding: 15px 30px;
+}
+
+// card
+.card {
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px 0px #ddd;
+    padding: 12px;
+    min-height: 260px;
+}
